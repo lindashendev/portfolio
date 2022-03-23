@@ -1,0 +1,117 @@
+// browser nav
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    color: #2f2f2f;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  button {
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+#nav-icon {
+  display: none;
+}
+
+.top-nav {
+  display: flex;
+  opacity: 1;
+  li {
+    font-size: 0.9rem;
+    margin-left: 50px;
+    a {
+      text-decoration: none;
+      color: #2f2f2f;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    background-color: darken($primary-color, 10%);
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    li {
+      margin: 20px 0;
+      font-size: 1.2rem;
+      a {
+        color: white;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+
+  #nav-icon {
+    z-index: 20;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    span {
+      display: block;
+      position: absolute;
+      height: 4.5px;
+      width: 100%;
+      background-color: black;
+      border-radius: 10px;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+      &:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+      }
+      &:nth-child(2) {
+        top: 11px;
+        transform-origin: left center;
+      }
+      &:nth-child(3) {
+        top: 22px;
+        transform-origin: left center;
+      }
+    }
+  }
+
+  #nav-icon.open {
+    span {
+      background-color: #fff;
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+      }
+      &:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 25.5px;
+      }
+    }
+  }
+}

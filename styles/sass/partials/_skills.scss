@@ -1,0 +1,64 @@
+.skills {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+}
+
+// skills styling
+.skills-icons {
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  row-gap: 50px;
+  div {
+    height: 55px;
+  }
+  li {
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s ease-out;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    div {
+      transition: 0.1s ease-out;
+        &:hover {
+        transform: scale(1.2);
+      }
+    }
+    i {
+      font-size: 2.5rem;
+      color: rgb(67, 67, 67);
+      transition: 0.5s ease-out;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    .fa-terminal {
+      padding: 8.5px;
+      font-size: 2.1rem;
+    }
+    
+    .fa-cog {
+      padding: 4.5px;
+    }
+    
+    .fa-mobile-alt {
+      font-size: 2.6rem;
+    }
+
+    .fa-cog {
+      font-size: 2.7rem;
+    }
+    
+    .fa-universal-access {
+      font-size: 2.5rem;
+    }
+  }
+}

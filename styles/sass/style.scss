@@ -1,0 +1,86 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/navigation";
+@import "partials/about";
+@import "partials/skills";
+@import "partials/work";
+@import "partials/contact";
+@import "partials/footer";
+
+html {
+  font-size: 125%; /* makes font 20px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.75;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+// wrapper
+.wrapper {
+  margin: 0 auto;
+  width: 78%;
+  max-width: 1200px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* header styles */
+h1,
+h2, 
+h3, 
+h4, 
+h5 {
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: $header-text;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background-color: lighten($primary-color, 25%);
+    border-radius: 8px;
+    width: 100%;
+    height: 15px;
+    z-index: -10;
+  }
+}
+
+h1 {
+  font-size: 1.8rem;
+  line-height: 1.65;
+}
+
+h2 {
+  font-size: 1.45rem;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* media queries */
+@import "partials/media";
