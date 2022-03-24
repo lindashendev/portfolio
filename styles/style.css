@@ -283,8 +283,7 @@ header {
           justify-content: center;
 }
 .header-info h1, .header-info p {
-  margin: 10px 0;
-  line-height: 1.45;
+  margin: 8px 0;
 }
 .header-info p {
   color: black;
@@ -384,6 +383,16 @@ nav button {
 }
 
 @media (max-width: 768px) {
+  nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .logo {
+    display: none;
+  }
+
   .top-nav {
     position: absolute;
     top: 0;
@@ -401,7 +410,7 @@ nav button {
     position: absolute;
     opacity: 0;
     left: 0;
-    background-color: #b181b1;
+    background-color: #5f3b5f;
     height: 100vh;
     width: 100%;
   }
@@ -422,7 +431,7 @@ nav button {
   #nav-icon {
     z-index: 20;
     display: inline-block;
-    width: 30px;
+    width: 20px;
     height: 20px;
     position: relative;
     bottom: 5px;
@@ -436,8 +445,8 @@ nav button {
   #nav-icon span {
     display: block;
     position: absolute;
-    height: 4.5px;
-    width: 100%;
+    height: 4px;
+    width: 90%;
     background-color: black;
     border-radius: 10px;
     -webkit-transform: rotate(0deg);
@@ -446,17 +455,17 @@ nav button {
     transition: 0.25s ease-in-out;
   }
   #nav-icon span:nth-child(1) {
-    top: 0px;
+    top: 5px;
     -webkit-transform-origin: left center;
             transform-origin: left center;
   }
   #nav-icon span:nth-child(2) {
-    top: 11px;
+    top: 14px;
     -webkit-transform-origin: left center;
             transform-origin: left center;
   }
   #nav-icon span:nth-child(3) {
-    top: 22px;
+    top: 23px;
     -webkit-transform-origin: left center;
             transform-origin: left center;
   }
@@ -467,7 +476,7 @@ nav button {
   #nav-icon.open span:nth-child(1) {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    top: 4px;
+    top: 3.5px;
   }
   #nav-icon.open span:nth-child(2) {
     width: 0%;
@@ -476,7 +485,7 @@ nav button {
   #nav-icon.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    top: 25px;
+    top: 23px;
   }
 }
 .about, .contact {
@@ -825,8 +834,8 @@ h2:after {
 }
 
 h1 {
-  font-size: 1.8rem;
-  line-height: 1.65;
+  font-size: 1.7rem;
+  line-height: 1.5;
 }
 
 h2 {
@@ -930,10 +939,9 @@ section {
 @media (max-width: 480px) {
   .header-info h1 {
     margin-top: 20px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .header-info p {
-    margin-top: 20px;
     font-size: 0.9rem;
     line-height: 1.5;
   }
