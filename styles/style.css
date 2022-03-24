@@ -401,12 +401,12 @@ nav button {
     position: absolute;
     opacity: 0;
     left: 0;
-    background-color: #9e629e;
+    background-color: #b181b1;
     height: 100vh;
     width: 100%;
   }
   .top-nav li {
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 1.2rem;
   }
   .top-nav li a {
@@ -425,6 +425,8 @@ nav button {
     width: 30px;
     height: 20px;
     position: relative;
+    bottom: 5px;
+    right: 10px;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-transition: 0.5s ease-in-out;
@@ -474,7 +476,7 @@ nav button {
   #nav-icon.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    top: 25.5px;
+    top: 25px;
   }
 }
 .about, .contact {
@@ -511,15 +513,6 @@ nav button {
           box-shadow: 10px 10px #b181b1;
 }
 
-@media (max-width: 768px) {
-  .about-container .summary, .about-container img {
-    width: 100%;
-  }
-
-  h2, .sub-info {
-    text-align: center;
-  }
-}
 .skills {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -579,22 +572,6 @@ nav button {
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
 }
-.skills-icons li .fa-terminal {
-  padding: 8.5px;
-  font-size: 2.1rem;
-}
-.skills-icons li .fa-cog {
-  padding: 4.5px;
-}
-.skills-icons li .fa-mobile-alt {
-  font-size: 2.6rem;
-}
-.skills-icons li .fa-cog {
-  font-size: 2.7rem;
-}
-.skills-icons li .fa-universal-access {
-  font-size: 2.5rem;
-}
 
 .work {
   padding: 30px 0;
@@ -604,7 +581,7 @@ nav button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px 0;
+  padding: 25px 0;
 }
 .project-item .project-image {
   width: 50%;
@@ -624,6 +601,10 @@ nav button {
 }
 .project-card p {
   margin-top: 15px;
+}
+.project-card .tools-used {
+  margin: 10px 0;
+  font-weight: 600;
 }
 .project-card .work-links {
   margin: 0;
@@ -658,24 +639,9 @@ nav button {
 }
 .project-item-alternate .project-card {
   margin-left: 0px;
+  margin-right: 60px;
 }
 
-@media (max-width: 768px) {
-  .project-card {
-    text-align: center;
-  }
-  .project-card ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .tools {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
 .contact {
   padding-top: 40px;
 }
@@ -731,7 +697,7 @@ nav button {
   margin-right: 30px;
 }
 .socials li i {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #202020;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
@@ -742,8 +708,8 @@ nav button {
 }
 .socials li i:hover {
   color: #b181b1;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 form {
@@ -776,14 +742,15 @@ form input {
 }
 form textarea {
   width: 100%;
+  resize: none;
 }
 form input, form textarea {
   font-size: 0.9rem;
   font-family: "Open Sans", sans-serif;
   padding: 9px 15px;
-  border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   margin-bottom: 20px;
+  border: none;
 }
 
 footer {
@@ -894,8 +861,12 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about-container .about-info {
-    margin: 0px 0px 20px 0px;
+  .about-container .summary, .about-container img {
+    width: 100%;
+  }
+
+  h2, .tools-used {
+    text-align: center;
   }
 
   .skills-icons {
@@ -910,11 +881,8 @@ section {
     width: calc(33.3333333333% - 20px);
   }
   .skills-icons li i {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
-  }
-  .skills-icons li .fa-universal-access, .skills-icons li .fa-cog {
-    font-size: 2.7rem;
   }
 
   .project-item {
@@ -929,9 +897,18 @@ section {
 
   .project-card {
     margin-left: 0px;
+    text-align: center;
   }
   .project-card h3 {
     margin: 20px 0px;
+  }
+  .project-card ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-card p {
+    margin-top: 0;
   }
 
   .project-item-alternate .project-card {
@@ -953,7 +930,7 @@ section {
 @media (max-width: 480px) {
   .header-info h1 {
     margin-top: 20px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .header-info p {
     margin-top: 20px;
@@ -969,21 +946,13 @@ section {
   .skills-icons li {
     width: calc(50% - 20px);
   }
-  .skills-icons li i {
-    font-size: 2.8rem;
-  }
   .skills-icons li p {
     font-size: 0.8rem;
-  }
-  .skills-icons li .fa-terminal, .skills-icons li .fa-cog {
-    font-size: 2.2rem;
-  }
-  .skills-icons li .fa-universal-access {
-    font-size: 3rem;
   }
 
   .project-card h3 {
     font-size: 1.3rem;
+    margin: 10px;
   }
   .project-card .description {
     font-size: 0.9rem;

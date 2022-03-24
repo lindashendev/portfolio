@@ -39,9 +39,9 @@ portfolio.resize = () => {
 // zoom effect
 portfolio.skillsAnimate = () => {
   const attr = {
-    "data-aos": "zoom-in",
-    "data-aos-duration":"800",
-    "data-aos-easing": "ease-in-sine"
+    "data-aos": "fade-up",
+    "data-aos-duration":"400",
+    "data-aos-easing": "ease-in-quad"
   }
 
   const skillIcons = document.querySelectorAll(".skills-icons li");

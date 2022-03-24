@@ -15,9 +15,12 @@
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    .about-info {
-      margin: 0px 0px 20px 0px;
+    .summary, img {
+      width: 100%;
     }
+  }
+  h2, .tools-used {
+    text-align: center;
   }
 
   .skills-icons {
@@ -28,16 +31,12 @@
     li {
       width: calc((100% / 3) - 20px);
       i {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 20px;
-      }
-      .fa-universal-access, .fa-cog {
-        font-size: 2.7rem;
       }
     }
   }
 
-  // work flex parent
   .project-item {
     flex-direction: column;
     div, .project-image  {
@@ -47,8 +46,15 @@
 
   .project-card {
     margin-left: 0px;
+    text-align: center;
     h3 {
       margin: 20px 0px;
+    }
+    ul {
+      justify-content: center;
+    }
+    p {
+      margin-top: 0;
     }
   }
 
@@ -69,62 +75,54 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-.header-info {
-  h1 {
-    margin-top: 20px;
-    font-size: 1.8rem;
-  }
-  p {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }  
-} 
-
-.profile-image {
-  img {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-.skills-icons {
-  li {
-    width: calc((100% / 2) - 20px);
-    i {
-      font-size: 2.8rem;   
+  .header-info {
+    h1 {
+      margin-top: 20px;
+      font-size: 1.4rem;
     }
     p {
-      font-size: 0.8rem;
-    }
-    .fa-terminal, .fa-cog {
-      font-size: 2.2rem;
-    }
-    .fa-universal-access {
-      font-size: 3rem;
-    }
-  }
-}
+      margin-top: 20px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }  
+  } 
 
-.project-card {
-  h3 {
-    font-size: 1.3rem;
+  .profile-image {
+    img {
+      width: 200px;
+      height: 200px;
+    }
   }
-  .description {
-    font-size: 0.9rem;
-  }
-}
 
-.project-item {
-  padding: 15px 0;
-  div:first-of-type {
-    margin-top: 20px;
+  .skills-icons {
+    li {
+      width: calc((100% / 2) - 20px);
+      p {
+        font-size: 0.8rem;
+      }
+    }
   }
-}
 
-form {
-  button {
-    width: 70%;
+  .project-card {
+    h3 {
+      font-size: 1.3rem;
+      margin: 10px;
+    }
+    .description {
+      font-size: 0.9rem;
+    }
   }
-}
+
+  .project-item {
+    padding: 15px 0;
+    div:first-of-type {
+      margin-top: 20px;
+    }
+  }
+
+  form {
+    button {
+      width: 70%;
+    }
+  }
 }

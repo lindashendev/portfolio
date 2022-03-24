@@ -5,7 +5,7 @@
 // flex parent
 .project-item {
   display: flex;
-  padding: 40px 0;
+  padding: 25px 0;
   .project-image {
     width: 50%;
     img {
@@ -24,6 +24,10 @@
   }
   p {
     margin-top: 15px;
+  }
+  .tools-used {
+    margin: 10px 0;
+    font-weight: 600;
   }
   .work-links {
     margin: 0;
@@ -53,18 +57,6 @@
   flex-direction: row-reverse;
   .project-card {
     margin-left: 0px;
-  }
-}
-
-@media (max-width: 768px) {
-  .project-card {
-    text-align: center;
-    ul {
-      justify-content: center;
-    }
-  }
-
-  .tools {
-    justify-content: center;
+    margin-right: 60px;
   }
 }
