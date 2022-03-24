@@ -15,7 +15,6 @@
   }
 }
 
-// project text styles
 .project-card {
   width: 50%;
   margin-left: 80px;
@@ -26,46 +25,26 @@
   p {
     margin-top: 15px;
   }
-  ul {
+  .work-links {
     margin: 0;
     margin-bottom: 15px;
     display: flex;
-    flex-wrap: wrap;
     li {
-      color: #545454;
-      border-radius: 10px;
-      margin-right: 10px;
-      line-height: 1.5;
-    }
-    i {
-      color: darken($dark-grey, 20%);
-      font-size: 1.4rem;
-      padding: 0;
-      transition: color 0.25s ease-in-out;
-      &:hover {
-        color: darken($dark-grey, 5%);
-      }
-    }
-  }
-  .work-links {
-    li {
-      margin: 20px 0;
-      margin-right: 12px;
-      padding: 0px;
+      margin: 20px 12px 20px 0;
       a {
         text-transform: uppercase;
         font-size: 0.85rem;
-        text-decoration: none;
         padding: 8px 20px;
         border-radius: 5px;
         color: darken($primary-color, 35%);
         background-color: lighten($primary-color, 20%);
         transition: 0.2s background-color ease-in;
-        &:hover {
-          background-color: $primary-color;
+        &:hover,
+        &:focus {
+          background-color: darken($primary-color, 10%);
           color: white;
         }
-      }    
+      }
     }
   }
 }
@@ -80,10 +59,10 @@
 @media (max-width: 768px) {
   .project-card {
     text-align: center;
-      ul {
-        justify-content: center;
-      } 
+    ul {
+      justify-content: center;
     }
+  }
 
   .tools {
     justify-content: center;

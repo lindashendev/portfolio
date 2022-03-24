@@ -9,29 +9,32 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h1, p {
-    margin: 10px 0;
-    line-height: 1.45;
-  }
-  p {
-    color: black;
-    font-size: 0.95rem;
-  }
-  span {
-    display: inline-block;
-    width: 100%;
-    color: $primary-color;
-  }
+    h1, p {
+      margin: 10px 0;
+      line-height: 1.45;
+    }
+    p {
+      color: black;
+      font-size: 0.95rem;
+    }
+    span {
+      display: inline-block;
+      width: 100%;
+      color: $primary-color;
+    }
 }
 
-// arrow icon
-.arrow-nav {
+.scrolldown {
   display: flex;
   justify-content: center;
   position: absolute;
   left: 45%;
-  i {
-    color: $primary-color;
-    font-size: 1.7rem;
-  }
+  bottom: 30px;
+    i {
+      color: $primary-color;
+      font-size: 1.35rem;
+      &:hover, &:focus {
+        color: darken($primary-color, 20%);
+      }
+    }
 }

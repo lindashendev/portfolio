@@ -5,8 +5,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   .logo {
-    font-family: 'Sen', sans-serif;
-    text-decoration: none;
+    font-family: $heading-font;
     color: #2f2f2f;
     font-size: 1.25rem;
     font-weight: 600;
@@ -29,10 +28,26 @@ nav {
     font-size: 0.9rem;
     margin-left: 50px;
     a {
-      text-decoration: none;
       color: #2f2f2f;
-      &:hover {
-        color: $primary-color;
+      position: relative;
+      &::after {
+        content: '';
+        opacity: 1;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $primary-color;
+        transition: opacity 0.3s, transform 0.3s;
+        transform: scale(0);
+        transform-origin: center;
+      }
+      &:hover::after, &:focus::after {
+        transform: scale(1);
+      }
+      &:hover, &:focus {
+        color: darken($primary-color, 20%);
       }
     }
   }
@@ -52,7 +67,6 @@ nav {
     background-color: darken($primary-color, 10%);
     height: 100vh;
     width: 100%;
-    z-index: 10;
     li {
       margin: 20px 0;
       font-size: 1.2rem;
@@ -62,6 +76,10 @@ nav {
         margin: 0;
       }
     }
+  }
+
+  .top-nav.expand {
+    z-index: 10;
   }
 
   #nav-icon {

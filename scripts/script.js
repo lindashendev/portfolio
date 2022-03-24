@@ -14,6 +14,7 @@ portfolio.mobileNav = () => {
 
   menu.addEventListener('click', function() {
     menu.classList.toggle('open');
+    dropdown.classList.toggle('expand');
     if (dropdown.style.opacity === '' || dropdown.style.opacity === '0') {
       dropdown.style.opacity = '1';
     } else if (dropdown.style.opacity === '1') {
