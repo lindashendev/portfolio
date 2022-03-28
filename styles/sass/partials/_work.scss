@@ -23,11 +23,30 @@
     display: inline-block;
   }
   p {
-    margin-top: 15px;
+    margin-top: 5px;
   }
   .tools-used {
     margin: 10px 0;
     font-weight: 600;
+  }
+  ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      font-size: 0.9rem;
+      padding: 5px;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    i {
+      color: darken($dark-grey, 20%);
+      font-size: 1.4rem;
+      padding: 0;
+      &:hover {
+        color: $dark-grey;
+      }
+    }
   }
   .work-links {
     margin: 0;
@@ -41,7 +60,7 @@
         padding: 8px 20px;
         border-radius: 5px;
         color: darken($primary-color, 35%);
-        background-color: lighten($primary-color, 20%);
+        background-color: lighten($primary-color, 22%);
         transition: 0.2s background-color ease-in;
         &:hover,
         &:focus {

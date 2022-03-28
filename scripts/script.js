@@ -5,6 +5,16 @@ portfolio.init = () => {
   portfolio.mobileNav();
   portfolio.resize();
   portfolio.skillsAnimate();
+  portfolio.darkMode();
+}
+
+portfolio.darkMode = () => {
+  const toggle = document.querySelector('.toggleLabel')
+  const body = document.querySelector('body');
+
+  toggle.addEventListener('click', function() {
+    body.classList.toggle("dark-mode");
+  })
 }
 
 // function for mobile navigation

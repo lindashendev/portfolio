@@ -8,12 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Linda Shen | Front-End Developer</title>
-  <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.ico">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sen:wght@400;700&display=swap" rel="stylesheet"> 
-
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&family=Mulish:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,400&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+  
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
   <link rel="stylesheet" href="./styles/style.css">
@@ -27,6 +27,7 @@
         <div class="menu-parent">
 
           <ul class="top-nav">
+            <li><a href="https://www.lindashen.dev/">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Toolkit</a></li>
             <li><a href="#work">Work</a></li>
@@ -39,6 +40,14 @@
               <span></span>
           </button>
         </div>
+      <!-- dark mode toggle -->
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="toggleLabel">
+          <i class="fas fa-moon"></i>
+          <i class="far fa-sun"></i>              
+        </label>       
+      </div>
       </nav>
 
       <div class="header-info">
@@ -62,7 +71,7 @@
         <p>Outside of writing code, you can find me reading, taking care of plants, drinking matcha, and hiking in the summertime.</p>
         </div>
         <div class="image-container" >
-          <img src="./assets/images/profile-img.jpg" alt="Profile headshot of Linda Shen">
+          <img src="./assets/images/cohort38-portraits-4_websize.jpg" alt="Profile headshot of Linda Shen">
         </div>
       </div>
     </section>
@@ -133,9 +142,18 @@
           </div>
           <div class="project-card">
             <h3>RoboTrivia</h3>
-            <p class="tools-used">React | Sass | APIs | Firebase | HTML5</p>
+            <!-- <p class="tools-used">React | Sass | APIs | Firebase | HTML5</p> -->
             <p class="description">An agency style group project which uses the Open Trivia DB to provide a set of trivia questions to players. Test out the game and see if you can beat the three high scores! Group programming project with Ashley Thadickal, Chris Yun and Imtiaz Rashid.</p>
    
+            <ul class="tools">
+              <li><i class="devicon-html5-plain"></i></li>
+              <li><i class="devicon-css3-plain"></i></li>
+              <li><i class="devicon-react-original"></i></li>
+              <li><i class="devicon-sass-original"></i></li>
+              <li><i class="devicon-firebase-plain"></i></li>
+              <li><i class="fas fa-cog"></i></li>
+            </ul>
+
             <ul class="work-links">
               <li><a href="https://robo-trivia.netlify.app/" class="live" target="_blank">View Live</a></li>
               <li><a href="https://github.com/RoboTriviaTwo/RoboTriviaGame" class="github" target="_blank">GitHub</a></li>
@@ -149,8 +167,16 @@
           </div>
           <div class="project-card">
             <h3>Movie Finder</h3> 
-            <p class="tools-used">JavaScript | CSS3 | RESTful API | Sass</p>
             <p class="description">MovieFinder is a website built in vanilla js that uses the OMDb API to generate a movie suggestion based on user input. The movie result page provided includes rating, overview, and an embedded trailer.</p>
+
+            <ul class="tools">
+              <li><i class="devicon-html5-plain"></i></li>
+              <li><i class="devicon-css3-plain"></i></li>
+              <li><i class="devicon-javascript-plain"></i></li>
+              <li><i class="devicon-sass-original"></i></li>
+              <li><i class="fas fa-cog"></i></li>
+              <li><i class="fab fa-figma"></i></li>
+            </ul>
 
             <ul class="work-links">
               <li><a href="https://movie-finder-app-p2.netlify.app/" class="live" target="_blank">View Live</a></li>
@@ -165,9 +191,17 @@
           </div>
           <div class="project-card">
             <h3>Textilee</h3>
-            <p class="tools-used">HTML5 | CSS3 | Sass</p>
+            <!-- <p class="tools-used">HTML5 | CSS3 | Sass</p> -->
             <p class="description">Textilee is a PSD multipage conversion based on a client brief and coded accordingly to a provided design style guide. The website is accessible and responsive across breakpoints.</p>
  
+            <ul class="tools">
+              <li><i class="devicon-html5-plain"></i></li>
+              <li><i class="devicon-css3-plain"></i></li>
+              <li><i class="devicon-sass-original"></i></li>
+              <li><i class="fas fa-mobile-alt"></i></li>
+              <li><i class="fas fa-cog"></i></li>
+            </ul>
+
             <ul class="work-links">
               <li><a href="https://linda-shen-project-one.netlify.app/" class="live" target="_blank">View Live</a></li>
               <li><a href="https://github.com/lindashendev/linda-shen-project-one" class="github" target="_blank">GitHub</a></li>
@@ -181,9 +215,19 @@
           </div>
           <div class="project-card">
             <h3>Met Highlights</h3>            
-            <p class="tools-used">React | APIs | Sass | Firebase | HTML5</p>
+            <!-- <p class="tools-used">React | APIs | Sass | Firebase | HTML5</p> -->
             <p class="description">Want to see artwork from the Met? With this app, you can explore art from the Metropolitan Museum of Art Open Source API. There is the option to save the your favourite artwork on the page.</p>
      
+            <ul class="tools">
+              <li><i class="devicon-html5-plain"></i></li>
+              <li><i class="devicon-css3-plain"></i></li>
+              <li><i class="devicon-sass-original"></i></li>
+              <li><i class="devicon-react-original"></i></li>
+              <li><i class="devicon-firebase-plain"></i></li>
+              <li><i class="fas fa-cog"></i></li>
+              <li><i class="fab fa-figma"></i></li>
+            </ul>
+
             <ul class="work-links">
               <li><a href="https://met-highlights-art.netlify.app/" class="live" target="_blank">View Live</a></li>
               <li><a href="https://github.com/lindashendev/linda-shen-project-three" class="github" target="_blank">GitHub</a></li>

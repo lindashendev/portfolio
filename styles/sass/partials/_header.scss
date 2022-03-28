@@ -29,11 +29,24 @@ header {
   position: absolute;
   left: 45%;
   bottom: 30px;
+  animation: animate 0.9s infinite;
     i {
       color: $primary-color;
-      font-size: 1.35rem;
+      font-size: 1.5rem;
       &:hover, &:focus {
         color: darken($primary-color, 20%);
       }
     }
+}
+
+@keyframes animate {
+  0% {
+    bottom: 4%;
+  }
+  50% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: 4%;
+  }
 }
