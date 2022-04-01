@@ -1,10 +1,25 @@
 // header partial
 header {
-  height: 100vh;   
+  height: 100vh;
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.header-info-wrapper {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
 }
 
 .header-info {
-  height: 70vh;
+  align-self: center;
+  border: 2px solid #000;
+  padding: 60px;
+  width: 60%;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
