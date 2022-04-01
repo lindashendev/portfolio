@@ -1,13 +1,19 @@
+// portfolio colors
+$primary-color: #b181b1;
+$header-text: #1d2032;
+$light-grey: #ebebee;
+$dark-grey: #797979;
+$heading-font: 'League Spartan', sans-serif;
+$body-font: 'Inter', sans-serif;
+
 @import "partials/setup";
-@import "partials/variables";
-@import "partials/darkmode";
-@import "partials/header";
 @import "partials/navigation";
+@import "partials/header-footer";
 @import "partials/about";
 @import "partials/skills";
 @import "partials/work";
 @import "partials/contact";
-@import "partials/footer";
+
 
 html {
   font-size: 125%; /* makes font 20px */
@@ -18,60 +24,46 @@ body {
   font-family: $body-font;
   line-height: 1.8;
   font-size: 0.85rem;
-  margin: 0;
-  padding: 0;
 }
 
-// wrapper
 .wrapper {
   margin: 0 auto;
-  width: 78%;
+  width: 85%;
   max-width: 1200px;
 }
 
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* header styles */
 h1,
 h2, 
 h3, 
 h4, 
 h5 {
   font-family: $heading-font;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
-  color: $header-text;
-  margin: 0;
-}
-
-h2 {
-  position: relative;
-  display: inline-block;
+  margin-bottom: 0px;
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 2.6rem;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 1.45rem;
-  letter-spacing: 0.5px;
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: 1.3rem;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+h2 ~ p {
+    margin-bottom: 30px;
+}
+
+p {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  margin: 0px 0px 15px 0px;
 }
 
 section {

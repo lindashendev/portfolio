@@ -191,6 +191,15 @@ template {
 [hidden] {
   display: none;
 }
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
 html {
   -moz-box-sizing: border-box;

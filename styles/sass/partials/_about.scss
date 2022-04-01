@@ -1,24 +1,26 @@
 // section styling
 .about, .contact {
-  background-color: #f2edf2;
   position: relative;
 }
 
 .about-container {
   display: flex;
-  align-items: center;
+  align-content: flex-start;
   justify-content: space-between;
-    .summary {
-        width: 65%;
-    }
-    .image-container {
-        padding: 30px;
-        img {
-          width: 250px;
-          height: 300px;
-          object-position: top;
-          object-fit: cover;
-          box-shadow: 10px 10px $primary-color;
-        }
-    }
+  .about-text {
+      width: 65%;
+  }
+  .about-image {
+      width: 30%;
+      img {
+        height: 350px;
+        object-position: top;
+        object-fit: cover;
+        &:hover {
+          box-shadow: 
+          rgba(195, 46, 240, 0.4) 5px 5px, 
+          rgba(195, 46, 240, 0.3) 10px 10px
+      }
+  }
+}
 }

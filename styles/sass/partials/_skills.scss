@@ -1,24 +1,21 @@
 .skills {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  h2 {
-    margin-top: 15px;
-    margin-bottom: 50px;
-  }
+  padding: 0px 0px 40px 0px;
 }
 
-// skills styling
 .skills-icons {
-  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
   width: 90%;
+  margin: 10px auto;
   row-gap: 50px;
+  span {
+    display: block;
+  }
   div {
     height: 55px;
   }
   li {
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,28 +30,15 @@
       }
     }
     i {
-      font-size: 2.2rem;
-      color: rgb(67, 67, 67);
+      font-size: 2.4rem;
+      color: #434343;
       transition: 0.5s ease-out;
-      &:hover {
-        color: $primary-color;
-        transform: $scale;
-      }
+        &:hover {
+          color: $primary-color;
+        }
     }
-    // .fa-terminal {
-    //   font-size: 2.1rem;
-    // }
-    
-    // .fa-mobile-alt {
-    //   font-size: 2.6rem;
-    // }
-
-    // .fa-cog {
-    //   font-size: 2.7rem;
-    // }
-    
-    // .fa-universal-access {
-    //   font-size: 2.5rem;
-    // }
+    p {
+      margin-top: 15px;
+    }
   }
 }

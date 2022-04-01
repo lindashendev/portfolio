@@ -5,16 +5,6 @@ portfolio.init = () => {
   portfolio.mobileNav();
   portfolio.resize();
   portfolio.skillsAnimate();
-  portfolio.darkMode();
-}
-
-portfolio.darkMode = () => {
-  const toggle = document.querySelector('.toggleLabel')
-  const body = document.querySelector('body');
-
-  toggle.addEventListener('click', function() {
-    body.classList.toggle("dark-mode");
-  })
 }
 
 // function for mobile navigation
@@ -50,8 +40,9 @@ portfolio.resize = () => {
 portfolio.skillsAnimate = () => {
   const attr = {
     "data-aos": "fade-up",
-    "data-aos-duration":"400",
-    "data-aos-easing": "ease-in-quad"
+    "data-aos-duration":"200",
+    "data-aos-easing": "ease-in-quad",
+    "data-aos-once": "true"
   }
 
   const skillIcons = document.querySelectorAll(".skills-icons li");

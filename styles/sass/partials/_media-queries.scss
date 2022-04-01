@@ -15,8 +15,12 @@
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    .summary, img {
+    .about-text, .about-image {
       width: 100%;
+    }
+    .about-image {
+      display: flex;
+      justify-content: center;
     }
   }
   h2, .tools-used {

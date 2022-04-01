@@ -1,20 +1,20 @@
 // browser nav
 nav {
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .logo {
-    font-family: $heading-font;
-    color: #2f2f2f;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  button {
-    padding: 15px;
-    background-color: transparent;
-    border: none;
-  }
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      font-family: $heading-font;
+      color: #2f2f2f;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    button {
+      padding: 15px;
+      background-color: transparent;
+      border: none;
+    }
 }
 
 #nav-icon {
@@ -76,7 +76,7 @@ nav {
     height: 100vh;
     width: 100%;
     li {
-      margin: 10px 0;
+      margin: 20px 0;
       font-size: 1.2rem;
       a {
         color: white;
