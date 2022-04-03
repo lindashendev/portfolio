@@ -11,8 +11,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=League+Spartan:wght@600&family=Red+Hat+Mono&display=swap" rel="stylesheet"> 
-
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@600&family=Mulish&family=Work+Sans:wght@600&display=swap" rel="stylesheet"> 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
   <link rel="stylesheet" href="./styles/style.css">
@@ -26,8 +25,8 @@
         <div class="menu-parent">
           <ul class="top-nav">
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Toolkit</a></li>
-            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <button id="nav-icon" aria-label="Main menu" role="button" aria-expanded="false">
@@ -40,10 +39,12 @@
 
       <div class="header-info-wrapper">
         <div class="header-info">
-          <p>Hello, my name is</p>
-          <h1>Linda Shen and I'm a front end developer</h1>
+
+          <h1>Linda Shen</h1>
+          <p>Front End Web Developer</p>
+
         </div>
-    </div>
+      </div>
       <div class="scrolldown">
         <a href="#about"><i class="fas fa-chevron-down" aria-hidden="true" aria-label="Navigate to the about section"></i></a>
       </div>
@@ -52,20 +53,18 @@
 
   <main>
     <section id="about" class="about">
-      <div class="wrapper">
-          <h2>About me</h2>
-          <p class="sub-text">Hi there, it's nice to meet you!</p>
-          <div class="about-container">
-            <div class="about-text">
-                <p>My name is Linda and I'm a front-end developer with a background in graphic design. I’m a recent graduate of the Immersive Web development bootcamp at Juno and the York University/Sheridan College program with a Bachelors in Design.</p>
-                <p>My background in design allows me to be meticulous in front-end development work and delivering to tight deadlines, as well as creating accessible user experiences. I seek to create experiences that are engaging and valuable to users.</p>
-                <p>Outside of writing code, you can find me reading, taking care of plants, drinking matcha, and hiking in the summertime. I'm currently learning Typescript.</p>
+      <div class="wrapper about-container">
+          <div class="about-text">
+              <h2>About me</h2>
+              <p class="sub-text">Hi there, it's nice to meet you!</p>
+              <p>My name is Linda and I'm a front-end developer with a background in graphic design. I’m a recent graduate of the Immersive Web development bootcamp at Juno and the York University/Sheridan College program with a Bachelors in Design.</p>
+              <p>My background in design allows me to be meticulous in front-end development work and delivering to tight deadlines, as well as creating accessible user experiences. I seek to create experiences that are engaging and valuable to users.</p>
+              <p>Outside of writing code, you can find me reading, taking care of plants, drinking matcha, and hiking in the summertime. I'm currently learning Typescript.</p>
             </div>
           <div class="about-image" >
-            <img src="./assets/images/profile-image.jpg" alt="Profile headshot of Linda Shen">
+            <img src="./assets/images/profile.jpg" alt="Profile headshot of Linda Shen">
           </div>
-        </div>
-      </div>
+       </div>
     </section>
 
     <section id="skills" class="skills">
@@ -142,12 +141,33 @@
         <p class="sub-text">A collection of projects I've built so far</p>
         <div class="project-item">
           <div class="project-image">
-            <img src="./assets/images/work/mockups/IsTheBookBetter.png" alt="React Portfolio Project Piece RoboTrivia">
+            <img src="./assets/images/work/mockups/MovieFinder.png" alt="Portfolio Project MovieFinder">
+          </div>
+          <div class="project-card">
+            <h3>Movie Finder</h3>
+            <p class="description">A movie suggestion app that provides a suggestion based on user input, using the Movie DB API. The result provided to users includes rating, overview, and the trailer. Paired programming project with Jaren Frani.</p>
+            <ul class="tools">
+              <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
+              <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
+              <li><i class="devicon-sass-original" aria-hidden="true"></i></li>
+              <li><i class="fas fa-mobile-alt" aria-hidden="true"></i></li>
+              <li><i class="fas fa-cog" aria-hidden="true"></i></li>
+            </ul>
+
+            <ul class="work-links">
+              <li><a href="https://movie-finder-app-p2.netlify.app/" class="live" target="_blank">View Live</a></li>
+              <li><a href="https://github.com/P2-Movie-App/movie-finder-app" class="github" target="_blank">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+         
+        <div class="project-item project-item-alternate">
+          <div class="project-image">
+            <img src="./assets/images/work/mockups/IsTheBookBetter.png" alt="Portfolio React Project Is The Book Better?">
           </div>
           <div class="project-card">
             <h3>Is The Book Better?</h3>
-            <p class="description">A react app which takes the user input to fetch a result from the Google Books and The Movie DB API to compare which version has a higher rating.</p>
-            <p class="tools-used">Tech Stack</p>
+            <p class="description">Find out if the book or movie better version is better. A react app which allows the user to enter the name of a book or movie title, and provides a rating comparison using the The Movie DB API and Google Books API.</p>
             <ul class="tools">
               <li><i class="devicon-react-original"></i></li>
               <li><i class="devicon-html5-plain"></i></li>
@@ -163,14 +183,33 @@
           </div>
         </div> 
 
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/images/work/mockups/Textilee.png" alt="Responsive project Textilee PSD Conversion">
+          </div>
+          <div class="project-card">
+            <h3>Textilee</h3>
+            <p class="description">A PSD multipage conversion based on a client brief and coded accordingly to a provided design style guide. The website is accessible and responsive across breakpoints.</p>
+            <ul class="tools">
+              <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
+              <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
+              <li><i class="devicon-sass-original" aria-hidden="true"></i></li>
+              <li><i class="fas fa-mobile-alt" aria-hidden="true"></i></li>
+            </ul>
+
+            <ul class="work-links">
+              <li><a href="https://linda-shen-project-one.netlify.app/" class="live" target="_blank">View Live</a></li>
+              <li><a href="https://github.com/lindashendev/linda-shen-project-one" class="github" target="_blank">GitHub</a></li>
+            </ul>
+          </div>
+        </div> 
         <div class="project-item project-item-alternate">
-          <div class="project-image" >
-            <img src="./assets/images/work/mockups/Robotrivia.png" alt="Portfolio Project Piece Textilee">
+          <div class="project-image">
+            <img src="./assets/images/work/mockups/Robotrivia.png" alt="Portfolio React Project RoboTrivia">
           </div>
           <div class="project-card">
             <h3>RoboTrivia</h3>
-            <p class="description">An agency-styled app which uses the Open Trivia DB to provide a set of trivia questions from any category. An avatar is generated based on the user's name. A group programming project with Ashley Thadickal, Chris Yun and Imtiaz Rashid.</p>
-            <p class="tools-used">Tech Stack</p>
+             <p class="description">A react app which uses the Open Trivia DB to provide a set of trivia questions from any category. A group programming project with Ashley Thadickal, Chris Yun and Imtiaz Rashid.</p>
             <ul class="tools">
               <li><i class="devicon-react-original" aria-hidden="true"></i></li>
               <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
@@ -186,60 +225,15 @@
             </ul>
           </div>
         </div>
-
-        <div class="project-item">
-          <div class="project-image">
-            <img src="./assets/images/work/mockups/Textilee.png" alt="Textilee PSD Conversion">
-          </div>
-          <div class="project-card">
-            <h3>Textilee</h3>
-            <p class="description">A PSD multipage conversion based on a client brief and coded accordingly to a provided design style guide. The website is accessible and responsive across breakpoints.</p>
-            <p class="tools-used">Tech Stack</p>
-            <ul class="tools">
-              <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
-              <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
-              <li><i class="devicon-sass-original" aria-hidden="true"></i></li>
-              <li><i class="fas fa-mobile-alt" aria-hidden="true"></i></li>
-            </ul>
-
-            <ul class="work-links">
-              <li><a href="https://linda-shen-project-one.netlify.app/" class="live" target="_blank">View Live</a></li>
-              <li><a href="https://github.com/lindashendev/linda-shen-project-one" class="github" target="_blank">GitHub</a></li>
-            </ul>
-          </div>
-        </div> 
-
-        <div class="project-item project-item-alternate">
-          <div class="project-image" >
-            <img src="./assets/images/work/mockups/MovieFinder.png" alt="Portfolio Project Piece Textilee">
-          </div>
-          <div class="project-card">
-            <h3>Movie Finder</h3>
-            <p class="description">MovieFinder is an app that utilizes the OMDb API to generate a movie suggestion based on user keyword search. The movie result provided to users includes rating, overview, and the trailer on the page. Paired programming project with Jaren Frani.</p>
-            <p class="tools-used">Tech Stack</p>
-            <ul class="tools">
-              <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
-              <li><i class="devicon-css3-plain" aria-hidden="true"></i></li>
-              <li><i class="devicon-sass-original" aria-hidden="true"></i></li>
-              <li><i class="fas fa-mobile-alt" aria-hidden="true"></i></li>
-              <li><i class="fas fa-cog" aria-hidden="true"></i></li>
-            </ul>
-
-            <ul class="work-links">
-              <li><a href="https://movie-finder-app-p2.netlify.app/" class="live" target="_blank">View Live</a></li>
-              <li><a href="https://github.com/P2-Movie-App/movie-finder-app" class="github" target="_blank">GitHub</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
     </section>
     
-    <section id="contact" class="contact" >
-      <div data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-quart">
-        <div class="wrapper">
+    <section id="contact" class="contact">
+      <div class="wrapper" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-quart">
+        <div>
           <h2>Get in touch</h2>
         </div>
-        <div class="wrapper contact-container">
+        <div class="contact-container">
           <div class="contact-info">
             <p>If you have any questions about my projects, want to build something together, send me a message!</p>
             <p class="email"><a href="mailto:lindashencodes@gmail.com"> lindashencodes@gmail.com</a></p>

@@ -39,9 +39,7 @@ header {
 .scrolldown {
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 45%;
-  bottom: 30px;
+  align-items: center;
   animation: animate 0.9s infinite;
     i {
       color: #000;
@@ -49,17 +47,17 @@ header {
     }
 }
 
-// @keyframes animate {
-//   0% {
-//     bottom: 4%;
-//   }
-//   50% {
-//     bottom: 5%;
-//   }
-//   100% {
-//     bottom: 4%;
-//   }
-// }
+@keyframes animate {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 2%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
 
 footer {
   padding: 2px 0;

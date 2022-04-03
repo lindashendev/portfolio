@@ -15,10 +15,12 @@
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    .about-text, .about-image {
+    align-items: center;
+    .about-text {
       width: 100%;
     }
     .about-image {
+      width: 50%;
       display: flex;
       justify-content: center;
     }

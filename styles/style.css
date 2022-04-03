@@ -290,9 +290,9 @@ nav {
           align-items: center;
 }
 nav .logo {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #2f2f2f;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 nav button {
@@ -357,7 +357,6 @@ nav button {
   }
 
   .top-nav {
-    position: absolute;
     top: 0;
     margin: 0;
     -webkit-box-orient: vertical;
@@ -514,9 +513,9 @@ header div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  left: 45%;
-  bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-animation: animate 0.9s infinite;
           animation: animate 0.9s infinite;
 }
@@ -525,6 +524,29 @@ header div {
   font-size: 1.5rem;
 }
 
+@-webkit-keyframes animate {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 2%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 2%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
 footer {
   padding: 2px 0;
   text-align: center;
@@ -536,6 +558,7 @@ footer p {
 
 .about, .contact {
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .about-container {
@@ -551,23 +574,36 @@ footer p {
 .about-container .about-text {
   width: 65%;
 }
+.about-container .about-text h2 {
+  margin: 0px;
+}
 .about-container .about-image {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .about-container .about-image img {
-  height: 350px;
+  width: 100%;
+  border-radius: 50%;
   -o-object-position: top;
      object-position: top;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.about-container .about-image img:hover {
-  -webkit-box-shadow: rgba(195, 46, 240, 0.4) 5px 5px, rgba(195, 46, 240, 0.3) 10px 10px;
-          box-shadow: rgba(195, 46, 240, 0.4) 5px 5px, rgba(195, 46, 240, 0.3) 10px 10px;
-}
 
 .skills {
-  padding: 0px 0px 40px 0px;
+  padding: 40px 0px;
+}
+.skills h2 {
+  margin-bottom: 20px;
 }
 
 .skills-icons {
@@ -635,6 +671,9 @@ footer p {
   display: flex;
   margin-bottom: 50px;
 }
+.project-item .sub-text {
+  margin: 0px;
+}
 .project-item .project-image {
   width: 50%;
 }
@@ -654,7 +693,7 @@ footer p {
 
 .project-card {
   width: 50%;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 .project-card h3 {
   margin: 0px;
@@ -662,11 +701,6 @@ footer p {
 }
 .project-card p {
   margin-top: 5px;
-}
-.project-card .tools-used {
-  font-size: 0.8rem;
-  margin: 10px 0;
-  font-weight: 600;
 }
 .project-card ul {
   margin: 0;
@@ -676,9 +710,12 @@ footer p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.project-card ul li:first-of-type {
+  padding-left: 4px;
+}
 .project-card ul li {
   font-size: 0.9rem;
-  padding: 5px;
+  padding-right: 4px;
   border-radius: 10px;
   margin-right: 10px;
 }
@@ -710,7 +747,8 @@ footer p {
   transition: 0.2s background-color ease-in;
 }
 .project-card .work-links li a:hover, .project-card .work-links li a:focus {
-  color: black;
+  color: white;
+  background-color: #545454;
 }
 
 .project-item-alternate {
@@ -725,10 +763,7 @@ footer p {
 }
 
 .contact {
-  padding-top: 0px;
-}
-.contact h2 {
-  margin-bottom: 0px;
+  padding-top: 20px;
 }
 
 .contact-container {
@@ -740,9 +775,6 @@ footer p {
 .contact-info {
   margin-right: 90px;
   width: 50%;
-}
-.contact-info p {
-  margin-top: 0;
 }
 
 .email a {
@@ -800,7 +832,7 @@ form textarea {
 }
 form input, form textarea {
   font-size: 0.9rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Mulish", sans-serif;
   padding: 9px 15px;
   margin-bottom: 20px;
   border: none;
@@ -814,7 +846,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Mulish", sans-serif;
   line-height: 1.8;
   font-size: 0.85rem;
 }
@@ -830,33 +862,33 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 0px;
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
-h2 ~ p {
-  margin-bottom: 30px;
+h2 + p {
+  margin-top: 0;
 }
 
 p {
+  color: #242424;
   font-size: 0.8rem;
-  line-height: 1.8;
-  margin: 0px 0px 15px 0px;
+  line-height: 1.9;
 }
 
 section {
@@ -881,11 +913,15 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .about-container .about-text, .about-container .about-image {
+  .about-container .about-text {
     width: 100%;
   }
   .about-container .about-image {
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
