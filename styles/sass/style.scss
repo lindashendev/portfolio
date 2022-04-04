@@ -1,5 +1,5 @@
 // portfolio colors
-$primary-color: #b181b1;
+$primary-color: #af83b6;
 $header-text: #1d2032;
 $light-grey: #ebebee;
 $dark-grey: #797979;
@@ -42,13 +42,13 @@ h3,
 h4, 
 h5 {
   font-family: $heading-font;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 0px;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@ h3 {
 }
 
 h2 + p {
-  margin-top: 0;
+  margin: 10px 0;
 }
 
 p {
